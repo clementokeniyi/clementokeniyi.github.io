@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact — Fyzer Co</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Fyzer<span class="dot">.</span>Co</a>
+  <div class="nav-center">
+    <a href="product.html">Product</a><a href="customers.html">Customers</a><a href="pricing.html">Pricing</a><a href="integrations.html">Integrations</a><a href="blog.html">Blog</a><a href="about.html">Company</a>
+  </div>
+  <div class="nav-right"><a href="contact.html" class="btn-text">Sign in</a><a href="contact.html" class="btn-accent">Get started free</a></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="pill pill-green" style="margin-bottom:20px">Get in touch</div>
+    <h1>Let's talk revenue</h1>
+    <p>Whether you're evaluating Fyzer, need help with your account, or just want to say hello — we'd love to hear from you.</p>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <h2 class="section-title">Book a demo</h2>
+        <p>Our RevOps team will walk you through a personalised demo tailored to your business — typical duration 30 minutes. No hard sell, no pushy follow-ups.</p>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📧</span>
+          <div class="contact-detail-text"><strong>Email us</strong><span>hello@fyzerco.com</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📞</span>
+          <div class="contact-detail-text"><strong>Call us</strong><span>+1 (415) 823-0174</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">🕐</span>
+          <div class="contact-detail-text"><strong>Response time</strong><span>Within 1 business day</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📍</span>
+          <div class="contact-detail-text"><strong>Headquarters</strong><span>548 Market St, San Francisco, CA 94104</span></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">🌍</span>
+          <div class="contact-detail-text"><strong>Also in</strong><span>London · Singapore · Toronto</span></div>
+        </div>
+        <div style="margin-top:40px">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format&fit=crop" alt="Fyzer office" style="border-radius:12px;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--border)">
+        </div>
+      </div>
+      <div>
+        <div class="form-box">
+          <div id="form-wrap">
+            <h3 style="font-family:var(--hf);font-size:20px;font-weight:700;margin-bottom:24px">Request a demo</h3>
+            <div class="form-row">
+              <div class="field"><label for="fname">First name</label><input type="text" id="fname" placeholder="Alex"></div>
+              <div class="field"><label for="lname">Last name</label><input type="text" id="lname" placeholder="Morgan"></div>
+            </div>
+            <div class="field"><label for="email">Work email</label><input type="email" id="email" placeholder="alex@company.com"></div>
+            <div class="field"><label for="company">Company name</label><input type="text" id="company" placeholder="Acme Inc."></div>
+            <div class="field"><label for="role">Your role</label>
+              <select id="role"><option value="">Select your role...</option><option>VP / Director of Sales</option><option>VP / Director of Marketing</option><option>Revenue Operations</option><option>Sales Operations</option><option>Marketing Operations</option><option>CEO / Founder</option><option>Other</option></select>
+            </div>
+            <div class="field"><label for="size">Company size</label>
+              <select id="size"><option value="">Select...</option><option>1–25 employees</option><option>26–100 employees</option><option>101–500 employees</option><option>500+ employees</option></select>
+            </div>
+            <div class="field"><label for="message">What would you like to discuss?</label><textarea id="message" placeholder="Tell us about your current RevOps setup and what you're hoping to improve..."></textarea></div>
+            <button class="form-submit" onclick="handleSubmit(event)">Request your demo &rarr;</button>
+            <p class="form-note">No spam. We'll only reach out about your demo request.</p>
+          </div>
+          <div class="form-success" id="form-success">
+            <div style="font-size:40px;margin-bottom:16px">✅</div>
+            <div style="font-size:18px;font-weight:600;margin-bottom:8px">Demo request received</div>
+            <div style="font-size:14px;color:var(--muted)">A member of our team will reach out within 1 business day to confirm your booking.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface);border-top:1px solid var(--border)">
+  <div class="section-inner">
+    <div class="section-header center"><h2 class="section-title">Other ways to get help</h2></div>
+    <div class="grid-3">
+      <div class="card" style="text-align:center"><div class="card-icon" style="margin:0 auto 16px">💬</div><div class="card-title">Live chat</div><div class="card-desc">Chat with our team in real time from any page. Available Mon–Fri, 9am–6pm PT.</div></div>
+      <div class="card" style="text-align:center"><div class="card-icon" style="margin:0 auto 16px">📚</div><div class="card-title">Documentation</div><div class="card-desc">Step-by-step guides, API references, and integration setup walkthroughs for every Fyzer feature.</div></div>
+      <div class="card" style="text-align:center"><div class="card-icon" style="margin:0 auto 16px">🎓</div><div class="card-title">Fyzer Academy</div><div class="card-desc">Free certification courses for RevOps, sales ops, and marketing ops professionals.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><a href="index.html" class="logo">Fyzer<span class="dot">.</span>Co</a><p>Revenue operations, simplified.</p></div>
+    <div class="footer-col"><h4>Product</h4><a href="product.html">Features</a><a href="integrations.html">Integrations</a><a href="pricing.html">Pricing</a><a href="security.html">Security</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="about.html">About us</a><a href="customers.html">Customers</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="contact.html">Contact</a><a href="#">Documentation</a><a href="#">Status</a><a href="#">Privacy</a></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2024 Fyzer Co. All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script>
+function handleSubmit(e){
+  e.preventDefault();
+  var email=document.getElementById('email').value.trim();
+  if(!email){document.getElementById('email').focus();return;}
+  document.getElementById('form-wrap').style.display='none';
+  document.getElementById('form-success').style.display='block';
+}
+</script>
+</body>
+</html>
