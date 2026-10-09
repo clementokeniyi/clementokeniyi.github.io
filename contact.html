@@ -56,29 +56,8 @@
       </div>
       <div>
         <div class="form-box">
-          <div id="form-wrap">
-            <h3 style="font-family:var(--hf);font-size:20px;font-weight:700;margin-bottom:24px">Request a demo</h3>
-            <div class="form-row">
-              <div class="field"><label for="fname">First name</label><input type="text" id="fname" placeholder="Alex"></div>
-              <div class="field"><label for="lname">Last name</label><input type="text" id="lname" placeholder="Morgan"></div>
-            </div>
-            <div class="field"><label for="email">Work email</label><input type="email" id="email" placeholder="alex@company.com"></div>
-            <div class="field"><label for="company">Company name</label><input type="text" id="company" placeholder="Acme Inc."></div>
-            <div class="field"><label for="role">Your role</label>
-              <select id="role"><option value="">Select your role...</option><option>VP / Director of Sales</option><option>VP / Director of Marketing</option><option>Revenue Operations</option><option>Sales Operations</option><option>Marketing Operations</option><option>CEO / Founder</option><option>Other</option></select>
-            </div>
-            <div class="field"><label for="size">Company size</label>
-              <select id="size"><option value="">Select...</option><option>1–25 employees</option><option>26–100 employees</option><option>101–500 employees</option><option>500+ employees</option></select>
-            </div>
-            <div class="field"><label for="message">What would you like to discuss?</label><textarea id="message" placeholder="Tell us about your current RevOps setup and what you're hoping to improve..."></textarea></div>
-            <button class="form-submit" onclick="handleSubmit(event)">Request your demo &rarr;</button>
-            <p class="form-note">No spam. We'll only reach out about your demo request.</p>
-          </div>
-          <div class="form-success" id="form-success">
-            <div style="font-size:40px;margin-bottom:16px">✅</div>
-            <div style="font-size:18px;font-weight:600;margin-bottom:8px">Demo request received</div>
-            <div style="font-size:14px;color:var(--muted)">A member of our team will reach out within 1 business day to confirm your booking.</div>
-          </div>
+          <script src="https://js-eu1.hsforms.net/forms/embed/149515750.js" defer></script>
+          <div class="hs-form-frame" data-region="eu1" data-form-id="0dadbd17-4167-431d-bf16-059720eba650" data-portal-id="149515750"></div>
         </div>
       </div>
     </div>
@@ -105,14 +84,5 @@
   </div>
   <div class="footer-bottom"><span>&copy; 2024 Fyzer Co. All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div>
 </footer>
-<script>
-function handleSubmit(e){
-  e.preventDefault();
-  var email=document.getElementById('email').value.trim();
-  if(!email){document.getElementById('email').focus();return;}
-  document.getElementById('form-wrap').style.display='none';
-  document.getElementById('form-success').style.display='block';
-}
-</script>
 </body>
 </html>
